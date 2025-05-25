@@ -104,6 +104,7 @@ body {
 }
 
 .hero {
+
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   color: var(--white);
   text-align: center;
@@ -218,6 +219,24 @@ body {
 
 .integrante-info p {
   margin: 0.5rem 0;
+}
+
+.introducao h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.introducao p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.introducao .btn {
+  margin: 0 auto;
+  display: block;
 }
 
 .solucao-hero {
@@ -447,4 +466,82 @@ footer {
   color: var(--white);
   text-align: center;
   padding: 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: auto;
+  max-width: 900px;
+  height: auto;
+  max-height: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+.modal-content h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.modal-content ul {
+  list-style: decimal;
+  list-style-position: inside;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align:left;
+  font-size: 1.5rem;
+  text;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fade-in.appear,
+.slide-in-left.appear {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.fade-in, .slide-in-left {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }

@@ -16,58 +16,84 @@
           <li><a href="integrantes.html">Integrantes</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="solucao.html">Solução</a></li>
+          <li><a href="solucao.html" class="active">Solução</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="solucao-hero">
-      <h1>Solução Inovadora para a Saúde Digital</h1>
-      <p>Desenvolvemos uma plataforma inclusiva que conecta pacientes e profissionais de saúde de maneira simples, rápida e eficaz, reduzindo o absenteísmo e promovendo qualidade de vida.</p>
-      <a href="contato.html" class="btn btn-primary">Quero Saber Mais</a>
-    </section>
+<main>
+  <section class="introducao">
+    <div class="container">
+      <h1>Solução Proposta</h1>
+      <p>Detalhes da solução para melhorar o acesso à saúde digital.</p>
+      <button id="abrirTutorial" class="btn btn-primary">Quero Saber Mais</button>
+
+      <div id="tutorialModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Como Funciona</h2>
+          <p>Nosso aplicativo é projetado para ser intuitivo e acessível, com funcionalidades que atendem às necessidades de todos os usuários.</p>
+          <ul>
+            <li>Baixe o aplicativo</li>
+            <li>Acesse o portal</li>
+            <li>Cadastre sua senha</li>
+            <li>Confirme seus dados</li>
+            <li>Agende sua consulta</li>
+            <li>Entre na consulta</li>
+            <li>Participe da teleconsulta</li>
+            <li>Avalie o serviço</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
     <section class="solucao-detalhes">
-      <h2>Como Funciona</h2>
-      <div class="cards-funcionalidades">
-        <div class="func-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" alt="Lembretes de Consulta">
-          <h3>Lembretes Inteligentes</h3>
-          <p>Envio automático de mensagens via WhatsApp e SMS para lembrar consultas, reduzindo faltas.</p>
-        </div>
-        <div class="func-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Acessibilidade">
-          <h3>Interface Acessível</h3>
-          <p>Design pensado para idosos e pessoas com deficiência, com áudio, imagens e textos claros.</p>
-        </div>
-        <div class="func-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png" alt="Material Educativo">
-          <h3>Material Educativo</h3>
-          <p>Conteúdos simples e interativos para explicar procedimentos e cuidados de saúde.</p>
-        </div>
-        <div class="func-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Suporte">
-          <h3>Suporte em Tempo Real</h3>
-          <p>Botão de ajuda para acesso imediato a suporte técnico e informações.</p>
+      <div class="container">
+        <h2>Como Funciona</h2>
+        <div class="cards-funcionalidades">
+          <div class="func-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" alt="Lembretes de Consulta">
+            <h3>Lembretes Inteligentes</h3>
+            <p>Envio automático de mensagens via WhatsApp e SMS para lembrar consultas, reduzindo faltas.</p>
+          </div>
+          <div class="func-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Acessibilidade">
+            <h3>Interface Acessível</h3>
+            <p>Design pensado para idosos e pessoas com deficiência, com áudio, imagens e textos claros.</p>
+          </div>
+          <div class="func-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png" alt="Material Educativo">
+            <h3>Material Educativo</h3>
+            <p>Conteúdos simples e interativos para explicar procedimentos e cuidados de saúde.</p>
+          </div>
+          <div class="func-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Suporte">
+            <h3>Suporte em Tempo Real</h3>
+            <p>Botão de ajuda para acesso imediato a suporte técnico e informações.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="call-to-action">
-      <h2>Vamos transformar a saúde juntos?</h2>
-      <p>Entre em contato com nossa equipe e descubra como a tecnologia pode melhorar vidas.</p>
-      <a href="contato.html" class="btn btn-secondary">Fale Conosco</a>
+      <div class="container">
+        <h2>Vamos transformar a saúde juntos?</h2>
+        <p>Entre em contato com nossa equipe e descubra como a tecnologia pode melhorar vidas.</p>
+        <a href="contato.html" class="btn btn-primary">Fale Conosco</a>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Grupo Fiedma. All rights reserved.</p>
+      <p>&copy; 2025 Challenge FIAP. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
 </html>
+
