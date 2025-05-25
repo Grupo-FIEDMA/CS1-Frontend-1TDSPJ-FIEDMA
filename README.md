@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3436b7e7e0e23e626993d45c78cc18b09a170a1e
 # Saúde Digital - Challenge 2025 (1º Semestre - FIAP)
 
 Bem-vindo ao repositório do projeto **Saúde Digital**, desenvolvido como parte do **Challenge 2025 (1º semestre)** da **FIAP**.  
