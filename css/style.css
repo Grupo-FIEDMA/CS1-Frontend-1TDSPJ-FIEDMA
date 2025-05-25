@@ -1,0 +1,450 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #4caf50;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #2980b9;
+}
+
+.btn-saibamais {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-saibamais:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+.newsletter {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  color: var(--white);
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.newsletter .container {
+  max-width: 600px;
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 220px;
+}
+
+.newsletter button {
+  background-color: var(--white);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cards, .cards-integrantes, .cards-funcionalidades {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.card, .func-card, .integrante-info, .faq-bloco, .contato-info, .contato-formulario {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.card h3, .func-card h3, .integrante-info h2, .faq-bloco h2 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.card p, .func-card p, .faq-bloco p, .integrante-info p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.integrantes h1 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.integrantes p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.integrante-info p {
+  margin: 0.5rem 0;
+}
+
+.solucao-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.solucao-hero h1 {
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.solucao-hero p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+.solucao-detalhes {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.solucao-detalhes h2 {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.func-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.faq {
+  margin: 3rem auto;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.faq h1 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.faq p {
+  margin-bottom: 2rem;
+}
+
+.faq-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-bloco {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contato {
+  background-color: var(--white);
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 1000px;
+}
+
+.contato h1 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.contato p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contato-conteudo {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contato-info, .contato-formulario {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.contato-info h2, .contato-formulario h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.contato-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.contato-info li {
+  margin-bottom: 0.5rem;
+}
+
+.contato-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.contato-formulario input:focus,
+.contato-formulario textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+.contato-formulario textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contato-formulario button {
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .cards, .cards-integrantes, .cards-funcionalidades {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-bloco, .contato-info, .contato-formulario {
+    max-width: 100%;
+  }
+  .contato-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cards-integrantes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.integrante-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.integrante-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.integrante-card h2 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.integrante-card p {
+  margin: 0.3rem 0;
+}
+
+.social-links a {
+  margin: 0.2rem;
+  display: inline-block;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
